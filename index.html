@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Worker's test.</title>
+    <style>
+      body{
+        font-size: 12px;
+      }
+      .cats{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+      }
+      .a-cat {
+        align-items: center;
+        border: 0.2em solid #333;
+        display: flex;
+        height: 20em;
+        margin: 0em 1em 1em 0em;
+        width: 20em;
+        overflow: hidden;
+      }
+      .a-cat img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Worker's test.</h1>
+    <p>Type something (or nothing), hit send, and you'll get a cute cat picture.</p>
+    <button type="button" name="button">Get a cat!</button>
+    <br>
+    <div class="cats">
+    </div>
+    <script src="./workers_main.js" charset="utf-8"></script>
+  </body>
+</html>
